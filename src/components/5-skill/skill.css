@@ -1,0 +1,16 @@
+.skill .title {
+  color: var(--title);
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.skill .flex {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill .flex .animation {
+  width: 120px;
+}

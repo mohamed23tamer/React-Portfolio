@@ -1,0 +1,116 @@
+.contact-us .title {
+  color: var(--title);
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.contact-us .title .icon-mail {
+  color: var(--subTitle);
+  margin-right: 1rem;
+}
+
+.contact-us .sub-title {
+  color: var(--subTitle);
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-us div.flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us form label {
+  color: var(--subTitle);
+}
+
+.contact-us form .flex {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.contact-us form #email,
+.contact-us form #massage {
+  all: unset;
+  width: 25rem;
+  background-color: rgb(63, 63, 71, 0.4);
+  border: 1px solid rgb(63, 63, 71);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.light .contact-us form #email,
+.light .contact-us form #massage {
+  background-color: rgba(255, 255, 255, 0.164);
+  color: #2e2626;
+}
+
+.contact-us form #massage {
+  height: 10rem;
+  resize: vertical;
+}
+
+.contact-us form #email:hover,
+.contact-us form #email:focus,
+.contact-us form #massage:hover,
+.contact-us form #massage:focus {
+  border-color: rgb(43, 201, 185);
+}
+
+.light .contact-us form #email:hover,
+.light .contact-us form #email:focus,
+.light .contact-us form #massage:hover,
+.light .contact-us form #massage:focus {
+  border-color: rgb(34, 61, 58);
+}
+.contact-us form .submit {
+  background-color: rgb(34, 37, 49);
+  padding: 0.75rem 2rem;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.contact-us form .message {
+  font-size: 18px;
+  margin-top: 1.7rem;
+  align-items: center;
+  gap: 0px;
+}
+
+.contact-us form .done {
+  height: 55px;
+  font-size: 1rem;
+}
+
+.contact-us .animation .contact-animation {
+  max-width: 355px;
+}
+@media (max-width: 900px) {
+  .contact-us .animation {
+    display: none;
+  }
+  .contact-us form #email,
+  .contact-us form #massage {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-us form .flex {
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact-us form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us form .submit {
+    align-self: center;
+  }
+  .contact-us form #email,
+  .contact-us form #massage {
+    width: 15rem;
+  }
+}

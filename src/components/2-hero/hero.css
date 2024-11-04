@@ -1,0 +1,72 @@
+.hero {
+  margin-top: 3rem;
+}
+
+/*=====================
+1- Left section
+=======================*/
+
+.hero .left-section {
+  flex-grow: 1;
+}
+
+.hero .avatar-parent {
+  align-items: end;
+  gap: 0.6rem;
+  min-height: 66px;
+}
+
+.hero .avatar-parent .avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px darkgray inset;
+}
+
+.hero .avatar-parent .icon-verified {
+  color: var(--blue);
+  margin-bottom: 0.3rem;
+}
+
+.hero h1 {
+  padding: 24px 0;
+  color: var(--title);
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+
+.hero p {
+  color: var(--subTitle);
+  margin-bottom: 24px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.hero .all-icons {
+  gap: 1.2rem;
+  color: var(--subTitle);
+  font-size: 1.3rem;
+}
+
+.hero .all-icons .icon:hover {
+  color: var(--icon-hover);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+/*=====================
+1- Right section === animation
+=======================*/
+.hero .animation {
+  translate: 100px 55px;
+  width: 400px;
+}
+
+@media (max-width: 1115px) {
+  .hero .animation {
+    display: none;
+  }
+}

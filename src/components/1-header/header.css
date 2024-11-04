@@ -1,0 +1,138 @@
+/* ===============
+ header design 
+================== */
+header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.44rem;
+  margin-top: 1.2rem;
+}
+
+header nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.4rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px rgba(58, 56, 56, 0.438);
+}
+
+header ul {
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  font-size: 0.88rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+header ul li a:hover {
+  color: var(--blue);
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
+header button {
+  font-size: 1.2rem;
+}
+
+header .menu {
+  display: none;
+}
+
+/* ===============
+Icon Button 
+================== */
+header .menu,
+header .mode {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  color: var(--subTitle);
+  background-color: var(--bgHeader);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(247, 172, 87, 0.6);
+  transition: 0.2s;
+  box-shadow: 1px 1px 40px #4e4f50;
+}
+
+header .icon-sun {
+  color: orange;
+}
+
+header .menu:hover,
+header .mode:hover {
+  color: var(--title);
+  border-color: rgb(247, 172, 87);
+}
+
+header .icon-close {
+  color: var(--subTitle);
+  transition: 0.3s;
+}
+header .icon-close:hover {
+  color: crimson;
+  font-size: 1.5rem;
+  rotate: 180deg;
+}
+/* ===============
+Popup list 
+================== */
+header .fixed {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(40, 40, 48, 0.81);
+  z-index: 11;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes show {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.model {
+  animation: show 0.7s 1;
+  width: 75%;
+  margin: 1.2rem auto 0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.model li {
+  padding: 0.5rem 0 0.77rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header .fixed ul.model li:first-child {
+  text-align: right;
+  padding: 0.2rem 0 0;
+  border: none;
+  margin-bottom: -1rem;
+}
+
+header .fixed ul.model li:last-child {
+  border: none;
+}
+
+/* ===============
+Media query
+================== */
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
+}
