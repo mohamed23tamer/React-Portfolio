@@ -42,10 +42,7 @@ function Header() {
             <a href="#main">Projects</a>
           </li>
           <li>
-            <a href="#contact">Speaking</a>
-          </li>
-          <li>
-            <a href="#formContact">Contact</a>
+            <a href="#contact">Contacting</a>
           </li>
         </ul>
       </nav>
