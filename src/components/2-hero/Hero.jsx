@@ -34,10 +34,16 @@ function Hero() {
           like Redux and Next.js.
         </p>
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+          <a href="" className="icon icon-twitter"></a>
+          <a className="icon icon-instagram"></a>
+          <a
+            href="https://github.com/mohamed23tamer"
+            className="icon icon-github"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mohamed-tamer-8a8945218/"
+            className="icon icon-linkedin"
+          ></a>
         </div>
       </div>
       <div className="right-section">

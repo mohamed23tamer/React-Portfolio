@@ -16,6 +16,10 @@ function Header() {
     }
   }, [theme])
 
+  const handleClosePopup = function () {
+    setShowModel(false)
+  }
+
   return (
     <header className="flex">
       <button
@@ -66,27 +70,32 @@ function Header() {
         <div className="fixed">
           <ul className="model">
             <li>
-              <button
-                className="icon-close"
-                onClick={() => {
-                  setShowModel(false)
-                }}
-              />
+              <button className="icon-close" onClick={handleClosePopup} />
             </li>
             <li>
-              <a href="#hero">About</a>
+              <a onClick={handleClosePopup} href="#hero">
+                About
+              </a>
             </li>
             <li>
-              <a href="#formContact">Contact</a>
+              <a onClick={handleClosePopup} href="#formContact">
+                Contact
+              </a>
             </li>
             <li>
-              <a href="#main">Projects</a>
+              <a onClick={handleClosePopup} href="#main">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Speaking</a>
+              <a onClick={handleClosePopup} href="#contact">
+                Speaking
+              </a>
             </li>
             <li>
-              <a href="#skill">Skills</a>
+              <a onClick={handleClosePopup} href="#skill">
+                Skills
+              </a>
             </li>
           </ul>
         </div>

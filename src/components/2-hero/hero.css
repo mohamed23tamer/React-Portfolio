@@ -50,6 +50,10 @@
   font-size: 1.3rem;
 }
 
+.hero .all-icons .icon {
+  color: var(--subTitle);
+}
+
 .hero .all-icons .icon:hover {
   color: var(--icon-hover);
   cursor: pointer;
