@@ -40,7 +40,7 @@ function Contact() {
             />
           </div>
           <div className="flex">
-            <label htmlFor="massage">Your Massage:</label>
+            <label htmlFor="massage">Your Message:</label>
             <textarea
               value={message}
               onChange={(e) => setMassage(e.target.value)}
